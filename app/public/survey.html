@@ -14,9 +14,8 @@
   <body>
     <style>
       body{
-        width: 100vw;
-        padding: 0 20px;
-        margin: 0;
+        width: calc(100vw - 40px);
+        margin: 0 20px;
       }
       fieldset {
         border: 0;
@@ -25,7 +24,11 @@
       table{
         width: calc(100% - 40px);
         padding: 10px;
-        background-color: #f2f2f2;
+      }
+      form{
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #fbfbfb;
         border: 3px solid black;
         border-radius: 1vw;
       }
@@ -44,9 +47,16 @@
       th{
         padding: 0 15px;
       }
+      .submit-btn{
+        text-align: center;
+        margin: 20px;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+      }
     </style>
     <h1>This is a Survey.</h1>
-    <form>
+    <form id="survey">
       <table>
         <tr>
           <th>Question</th>
@@ -156,8 +166,8 @@
             <td><label><input type="radio" value="5" name="q10">5</label></td>
           </tr>
         </fieldset>
-
       </table>
+      <input class="submit-btn" type="submit">
     </form>
     
     <!--[if lt IE 7]>
