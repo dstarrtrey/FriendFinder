@@ -12,7 +12,154 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
+    <style>
+      body{
+        width: 100vw;
+        padding: 0 20px;
+        margin: 0;
+      }
+      fieldset {
+        border: 0;
+        padding: 0;
+      }
+      table{
+        width: calc(100% - 40px);
+        padding: 10px;
+        background-color: #f2f2f2;
+        border: 3px solid black;
+        border-radius: 1vw;
+      }
+      table th{
+        padding-bottom: 20px;
+      }
+      table td{
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      table td:first-child {
+          text-align: left;
+      }
+      th{
+        padding: 0 15px;
+      }
+    </style>
     <h1>This is a Survey.</h1>
+    <form>
+      <table>
+        <tr>
+          <th>Question</th>
+          <th>Strongly disagree</th>
+          <th>Disagree</th>
+          <th>Neither agree nor disagree</th>
+          <th>Agree</th>
+          <th>Strongly agree</th>
+        </tr>
+        <tr>
+          <td>1.  I quickly feel drained when in a large crowd of people.</td>
+          <fieldset id="q1">
+              <td><label><input type="radio" value="1" name="q1">1</label></td>
+              <td><label><input type="radio" value="2" name="q1">2</label></td>
+              <td><label><input type="radio" value="3" name="q1">3</label></td>
+              <td><label><input type="radio" value="4" name="q1">4</label></td>
+              <td><label><input type="radio" value="5" name="q1">5</label></td>
+          </fieldset>
+        </tr>
+        <tr>
+          <td>2. I am a cautious decision maker.</td>
+          <fieldset id="q2">
+              <td><label><input type="radio" value="1" name="q2">1</label></td>
+              <td><label><input type="radio" value="2" name="q2">2</label></td>
+              <td><label><input type="radio" value="3" name="q2">3</label></td>
+              <td><label><input type="radio" value="4" name="q2">4</label></td>
+              <td><label><input type="radio" value="5" name="q2">5</label></td>
+          </fieldset>
+        </tr>
+        <fieldset id="q3">
+          <tr>
+            <td>3. I feel drained after being out and about, even if I’ve enjoyed myself.</td>
+            <td><label><input type="radio" value="1" name="q3">1</label></td>
+            <td><label><input type="radio" value="2" name="q3">2</label></td>
+            <td><label><input type="radio" value="3" name="q3">3</label></td>
+            <td><label><input type="radio" value="4" name="q3">4</label></td>
+            <td><label><input type="radio" value="5" name="q3">5</label></td>
+          </tr>
+        </fieldset>
+        <fieldset id="q4">
+          <tr>
+            <td>4. I don’t take risks unless I’ve done some careful research or evaluation first.</td>
+            <td><label><input type="radio" value="1" name="q4">1</label></td>
+            <td><label><input type="radio" value="2" name="q4">2</label></td>
+            <td><label><input type="radio" value="3" name="q4">3</label></td>
+            <td><label><input type="radio" value="4" name="q4">4</label></td>
+            <td><label><input type="radio" value="5" name="q4">5</label></td>
+          </tr>
+        </fieldset>
+        <fieldset id="q5">
+          <tr>
+            <td>5. When I was a child, people described me as “quiet.”</td>
+            <td><label><input type="radio" value="1" name="q5">1</label></td>
+            <td><label><input type="radio" value="2" name="q5">2</label></td>
+            <td><label><input type="radio" value="3" name="q5">3</label></td>
+            <td><label><input type="radio" value="4" name="q5">4</label></td>
+            <td><label><input type="radio" value="5" name="q5">5</label></td>
+          </tr>
+        </fieldset>
+        <fieldset id="q6">
+          <tr>
+            <td>6. In large social gatherings, I often feel a need to seek out space to be by myself.</td>
+            <td><label><input type="radio" value="1" name="q6">1</label></td>
+            <td><label><input type="radio" value="2" name="q6">2</label></td>
+            <td><label><input type="radio" value="3" name="q6">3</label></td>
+            <td><label><input type="radio" value="4" name="q6">4</label></td>
+            <td><label><input type="radio" value="5" name="q6">5</label></td>
+          </tr>
+        </fieldset>
+        <fieldset id="q7">
+          <tr>
+            <td>7. I don’t rush decisions.</td>
+            <td><label><input type="radio" value="1" name="q7">1</label></td>
+            <td><label><input type="radio" value="2" name="q7">2</label></td>
+            <td><label><input type="radio" value="3" name="q7">3</label></td>
+            <td><label><input type="radio" value="4" name="q7">4</label></td>
+            <td><label><input type="radio" value="5" name="q7">5</label></td>
+          </tr>
+        </fieldset>
+        <fieldset id="q8">
+          <tr>
+            <td>8. Too much exposure to noise or light leaves me feeling drained or spacey.</td>
+            <td><label><input type="radio" value="1" name="q8">1</label></td>
+            <td><label><input type="radio" value="2" name="q8">2</label></td>
+            <td><label><input type="radio" value="3" name="q8">3</label></td>
+            <td><label><input type="radio" value="4" name="q8">4</label></td>
+            <td><label><input type="radio" value="5" name="q8">5</label></td>
+          </tr>
+        </fieldset>
+        <fieldset id="q9">
+          <tr>
+            <td>9. I am patient to find out all the facts before making a decision.</td>
+            <td><label><input type="radio" value="1" name="q9">1</label></td>
+            <td><label><input type="radio" value="2" name="q9">2</label></td>
+            <td><label><input type="radio" value="3" name="q9">3</label></td>
+            <td><label><input type="radio" value="4" name="q9">4</label></td>
+            <td><label><input type="radio" value="5" name="q9">5</label></td>
+          </tr>
+        </fieldset>
+        <fieldset id="q10">
+          <tr>
+            <td>10. I do my best work in a quiet environment.</td>
+            <td><label><input type="radio" value="1" name="q10">1</label></td>
+            <td><label><input type="radio" value="2" name="q10">2</label></td>
+            <td><label><input type="radio" value="3" name="q10">3</label></td>
+            <td><label><input type="radio" value="4" name="q10">4</label></td>
+            <td><label><input type="radio" value="5" name="q10">5</label></td>
+          </tr>
+        </fieldset>
+
+      </table>
+    </form>
+    
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
