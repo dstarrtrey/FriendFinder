@@ -57,6 +57,8 @@
     </style>
     <h1>This is a Survey.</h1>
     <form id="survey">
+      <b>Name: </b><input required type="text" id="name">
+      <b>Image Link: </b><input required type="text" id="photo">
       <table>
         <tr>
           <th>Question</th>
@@ -71,7 +73,7 @@
           <fieldset id="q1">
               <td><label><input type="radio" value="1" name="q1">1</label></td>
               <td><label><input type="radio" value="2" name="q1">2</label></td>
-              <td><label><input type="radio" value="3" name="q1">3</label></td>
+              <td><label><input type="radio" value="3" name="q1" checked>3</label></td>
               <td><label><input type="radio" value="4" name="q1">4</label></td>
               <td><label><input type="radio" value="5" name="q1">5</label></td>
           </fieldset>
@@ -81,7 +83,7 @@
           <fieldset id="q2">
               <td><label><input type="radio" value="1" name="q2">1</label></td>
               <td><label><input type="radio" value="2" name="q2">2</label></td>
-              <td><label><input type="radio" value="3" name="q2">3</label></td>
+              <td><label><input type="radio" value="3" name="q2" checked>3</label></td>
               <td><label><input type="radio" value="4" name="q2">4</label></td>
               <td><label><input type="radio" value="5" name="q2">5</label></td>
           </fieldset>
@@ -91,7 +93,7 @@
             <td>3. I feel drained after being out and about, even if I’ve enjoyed myself.</td>
             <td><label><input type="radio" value="1" name="q3">1</label></td>
             <td><label><input type="radio" value="2" name="q3">2</label></td>
-            <td><label><input type="radio" value="3" name="q3">3</label></td>
+            <td><label><input type="radio" value="3" name="q3" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q3">4</label></td>
             <td><label><input type="radio" value="5" name="q3">5</label></td>
           </tr>
@@ -101,7 +103,7 @@
             <td>4. I don’t take risks unless I’ve done some careful research or evaluation first.</td>
             <td><label><input type="radio" value="1" name="q4">1</label></td>
             <td><label><input type="radio" value="2" name="q4">2</label></td>
-            <td><label><input type="radio" value="3" name="q4">3</label></td>
+            <td><label><input type="radio" value="3" name="q4" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q4">4</label></td>
             <td><label><input type="radio" value="5" name="q4">5</label></td>
           </tr>
@@ -111,7 +113,7 @@
             <td>5. When I was a child, people described me as “quiet.”</td>
             <td><label><input type="radio" value="1" name="q5">1</label></td>
             <td><label><input type="radio" value="2" name="q5">2</label></td>
-            <td><label><input type="radio" value="3" name="q5">3</label></td>
+            <td><label><input type="radio" value="3" name="q5" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q5">4</label></td>
             <td><label><input type="radio" value="5" name="q5">5</label></td>
           </tr>
@@ -121,7 +123,7 @@
             <td>6. In large social gatherings, I often feel a need to seek out space to be by myself.</td>
             <td><label><input type="radio" value="1" name="q6">1</label></td>
             <td><label><input type="radio" value="2" name="q6">2</label></td>
-            <td><label><input type="radio" value="3" name="q6">3</label></td>
+            <td><label><input type="radio" value="3" name="q6" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q6">4</label></td>
             <td><label><input type="radio" value="5" name="q6">5</label></td>
           </tr>
@@ -131,7 +133,7 @@
             <td>7. I don’t rush decisions.</td>
             <td><label><input type="radio" value="1" name="q7">1</label></td>
             <td><label><input type="radio" value="2" name="q7">2</label></td>
-            <td><label><input type="radio" value="3" name="q7">3</label></td>
+            <td><label><input type="radio" value="3" name="q7" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q7">4</label></td>
             <td><label><input type="radio" value="5" name="q7">5</label></td>
           </tr>
@@ -141,7 +143,7 @@
             <td>8. Too much exposure to noise or light leaves me feeling drained or spacey.</td>
             <td><label><input type="radio" value="1" name="q8">1</label></td>
             <td><label><input type="radio" value="2" name="q8">2</label></td>
-            <td><label><input type="radio" value="3" name="q8">3</label></td>
+            <td><label><input type="radio" value="3" name="q8" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q8">4</label></td>
             <td><label><input type="radio" value="5" name="q8">5</label></td>
           </tr>
@@ -151,7 +153,7 @@
             <td>9. I am patient to find out all the facts before making a decision.</td>
             <td><label><input type="radio" value="1" name="q9">1</label></td>
             <td><label><input type="radio" value="2" name="q9">2</label></td>
-            <td><label><input type="radio" value="3" name="q9">3</label></td>
+            <td><label><input type="radio" value="3" name="q9" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q9">4</label></td>
             <td><label><input type="radio" value="5" name="q9">5</label></td>
           </tr>
@@ -161,7 +163,7 @@
             <td>10. I do my best work in a quiet environment.</td>
             <td><label><input type="radio" value="1" name="q10">1</label></td>
             <td><label><input type="radio" value="2" name="q10">2</label></td>
-            <td><label><input type="radio" value="3" name="q10">3</label></td>
+            <td><label><input type="radio" value="3" name="q10" checked>3</label></td>
             <td><label><input type="radio" value="4" name="q10">4</label></td>
             <td><label><input type="radio" value="5" name="q10">5</label></td>
           </tr>
@@ -169,7 +171,35 @@
       </table>
       <input class="submit-btn" type="submit">
     </form>
-    
+    <script>
+      document.querySelector("#survey").addEventListener("submit", function(event){
+        event.preventDefault();
+        const scores = [];
+        for (let x = 1; x <= 10; x++) {
+          scores.push(document.querySelector("input[name=" + "q" + x + "]:checked").value);
+        }
+        const friend = {
+          name: document.querySelector("#name").value,
+          photo: document.querySelector("#photo").value,
+          scores: scores
+        };
+
+        (async () => {
+          const rawResponse = await fetch('/api/friends', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(friend)
+          });
+          const content = await rawResponse.json();
+
+          console.log(content);
+        })();
+        
+      });
+    </script>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
