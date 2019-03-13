@@ -10,6 +10,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
     <style>
@@ -169,8 +174,9 @@
           </tr>
         </fieldset>
       </table>
-      <input class="submit-btn" type="submit">
+      <input class="submit-btn" type="submit" data-toggle="modal" data-target="#exampleModal">
     </form>
+    
     <script>
       document.querySelector("#survey").addEventListener("submit", function(event){
         event.preventDefault();
@@ -196,6 +202,11 @@
           const content = await rawResponse.json();
 
           console.log(content);
+          
+          // document.getElementbyId("match").innerHTML=`
+          //   <img src=${content.image}>
+          //   <h5>${content.name}</h5>
+          // `;
         })();
         
       });
