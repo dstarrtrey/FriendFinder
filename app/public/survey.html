@@ -7,14 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Survey</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <style>
@@ -52,6 +46,12 @@
       th{
         padding: 0 15px;
       }
+      b{
+        margin-left: 10%;
+      }
+      h1{
+        color: #0cada5;
+      }
       .submit-btn{
         text-align: center;
         margin: 20px;
@@ -60,9 +60,12 @@
         font-size: 25px;
       }
     </style>
-    <h1>This is a Survey.</h1>
+    <h1>FriendFinder Matchmaking Survey</h1>
     <form id="survey">
+      <br>
       <b>Name: </b><input required type="text" id="name">
+      <br>
+      <br>
       <b>Image Link: </b><input required type="text" id="photo">
       <table>
         <tr>
@@ -176,8 +179,8 @@
       </table>
       <input class="submit-btn" type="submit" data-toggle="modal" data-target="#exampleModal">
     </form>
-    
-    <script>
+    <a href="/">Back To Home</a>
+    <script type="module">
       document.querySelector("#survey").addEventListener("submit", function(event){
         event.preventDefault();
         const scores = [];
@@ -200,9 +203,14 @@
             body: JSON.stringify(friend)
           });
           const content = await rawResponse.json();
-
           console.log(content);
-          
+          console.log(content.photo);
+          swal({
+            title: "You have been matched!",
+            text: content.name,
+            icon: content.photo
+          });
+         
           // document.getElementbyId("match").innerHTML=`
           //   <img src=${content.image}>
           //   <h5>${content.name}</h5>
